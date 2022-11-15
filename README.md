@@ -9,6 +9,5 @@
 ### [FPGAs versus GPUs in Datacenters](Apuntes/FPGAs_versus_GPUs_in_Datacenters.md)
 ### [Single Chip Heterogeneous Computing](Apuntes/Single_Chip_Heterogeneous_Computing.md)
 
-## 2. Diseño e implementación de coprocesador para operaciones
-sobre vectores
-### [Projecto](Proyecto/About_the_project.md)
+## 2. Diseño e implementación de coprocesador para operaciones sobre vectores
+### [Projecto](Proyecto/)
