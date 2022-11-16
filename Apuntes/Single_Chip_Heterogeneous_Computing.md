@@ -2,17 +2,17 @@
 
 ## Resumen
 
-*Se presenta un nuevo paradigma, el *single-chip heterogeneous computing*, el cual permite llegar a mejor eficiencia energética combinando los procesadores tradicionales con los U-cores. Todo esto apuntando a los intereses de la ITRS en ese momento (2010). Utiliza las fortalezas de la diversidad, por ejemplo sacarle el provecho a la CPU, GPU y la FPGA según su potencial.
-*Dentro de las soluciones propuestas de los U-cores se encuentran las GPGPUs con aceleración usando SIMD engines.
-*Para poder explotar efectivamente el concepto de las U-cores se recomienda un paralelismo sobre el 90%.
+* Se presenta un nuevo paradigma, el *single-chip heterogeneous computing*, el cual permite llegar a mejor eficiencia energética combinando los procesadores tradicionales con los U-cores. Todo esto apuntando a los intereses de la ITRS en ese momento (2010). Utiliza las fortalezas de la diversidad, por ejemplo sacarle el provecho a la CPU, GPU y la FPGA según su potencial.
+* Dentro de las soluciones propuestas de los U-cores se encuentran las GPGPUs con aceleración usando SIMD engines.
+* Para poder explotar efectivamente el concepto de las U-cores se recomienda un paralelismo sobre el 90%.
 ## Background
 
 * Extiende el trabajo del multiprocesador de Hill y Marty.
 ![ComparacionParadigmas](Imagenes/chip_models.png "Chip models")
 * Ley de Amdhal:
-	* $$Speedup = 1/\left(\dfrac{f}{S}+1-f\right)$$
-	* $$Speedup_{symmetric} = 1/\left( \dfrac{1-f}{perf_{seq}(r)}+\dfrac{f}{(n/r)\times perf_{seq}(r)} \right)$$
-	* $$Speedup_{asymmetric} = 1/\left( \dfrac{1-f}{perf_{seq}(r)}+\dfrac{f}{perf_{seq}(r) +n-r} \right)$$
+	* $$Speedup = \dfrac{1}{\left(\dfrac{f}{S}+1-f\right)}$$
+	* $$Speedup_{symmetric} = \dfrac{1}{\left( \dfrac{1-f}{perf_{seq}(r)}+\dfrac{f}{(n/r)\times perf_{seq}(r)} \right)}$$
+	* $$Speedup_{asymmetric} = \dfrac{1}{\left( \dfrac{1-f}{perf_{seq}(r)}+\dfrac{f}{perf_{seq}(r) +n-r} \right)}$$
 	* $$perf_{seq} (r) = \sqrt{r}$$
 * 3 acercamientos no-von-Neumann para la computación:
 	1. Custom logic o ASICs. Alcanzan la mejor relación de eficiencia energética pero no pueden ser re modificadas y son muy costosas.
@@ -24,21 +24,21 @@ Se realizan múltiples supuestos. El primero es que se omite la interconección 
 * El parámetro P hace referencia a la potencia activa del BCE core.
 * El parámetro A hace referencia al area budget, el cual nos acota el área en los chip models.
 * El parámetro B define el máximo bandwidth que se puede lograr off-chip.
-* El parámetro $$\mu$$ representa el rendimiento relativo al BCE core.
-* El parámetro $$\phi$$ representa el consumo de potencia activa de los u-cores.
+* El parámetro $\mu$ representa el rendimiento relativo al BCE core.
+* El parámetro $\phi$ representa el consumo de potencia activa de los u-cores.
 
 ![Bounds](Imagenes/bounds.png "Bounds on area, power, and bandwidth.")
 
-$$Speedup_{heterogeneous} = 1/\left( \dfrac{1-f}{perf_{seq}(r)}+\dfrac{f}{\mu(n-r)} \right)$$
+$$Speedup_{heterogeneous} = \dfrac{1}{\left( \dfrac{1-f}{perf_{seq}(r)}+\dfrac{f}{\mu(n-r)} \right)}$$
 
-***Notar que para valores de \mathbf{\phi} pequeños se disminuye el impacto de la potencia P, mientras que para \mathbf{\mu} más grandes se tiene un mayor consumo de ancho de banda.***
+***Notar que para valores de $\mathbf{\phi}$ pequeños se disminuye el impacto de la potencia P, mientras que para $\mathbf{\mu}$ más grandes se tiene un mayor consumo de ancho de banda.***
 
 ### Metodología
 Para estimar los parámetros adecuados para el modelo de chip heterogeneo los autores proceden a estudiar los dispositivos de la época, revisar los tamaños de los cores para las CPUs, GPUs y FPGAs. Luego se les aplican algoritmos de diferentes enfoques (computing intensive o memory intensive).
 
-* Matrix-Matrix Multiplication. high arithmetic intensity and simple memory requirements
-* Fast Fourier Transform. possesses complex dataflow and memory requirements,
-* Black-Scholes. was selected due its rich mixture of arithmetic operators
+* Matrix-Matrix Multiplication. Intenso en computación aritmética, pero tiene requerimientos bajos en memoria.
+* Fast Fourier Transform. Posee complejos pasos de datos y tiene requerimientos de memoria.
+* Black-Scholes. Posee diferentes operadores en su ecuación.
 ### Conceptos Claves
 1. [CPU](https://en.wikipedia.org/wiki/Central_processing_unit): Central Processing Unit.
 2. [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit): Graphics Processing Unit.
