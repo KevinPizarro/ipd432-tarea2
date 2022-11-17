@@ -39,6 +39,13 @@ Para estimar los parámetros adecuados para el modelo de chip heterogeneo los au
 * Matrix-Matrix Multiplication. Intenso en computación aritmética, pero tiene requerimientos bajos en memoria.
 * Fast Fourier Transform. Posee complejos pasos de datos y tiene requerimientos de memoria.
 * Black-Scholes. Posee diferentes operadores en su ecuación.
+
+### Resultados y proyecciones
+
+Dentro de los resultados presentados no es novedad que los ASICs o custom logic sean los que más se destaquen, en cuanto a eficiencia energética y rendimiento. Pero de todas formas los enfoques u-cores son viables por no tener tanta diferencia respecto a los ASICs en tecnologías de más nanometros, así son buenas opciones para cuando se tienen menores presupuestos y no es totalmente necesario el alto rendimiento. Ojo que todo ello para paralelismo de f > 0.90. Para menores es mejor utilizar CPU.
+
+
+
 ### Conceptos Claves
 1. [CPU](https://en.wikipedia.org/wiki/Central_processing_unit): Central Processing Unit.
 2. [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit): Graphics Processing Unit.
@@ -54,10 +61,11 @@ Para estimar los parámetros adecuados para el modelo de chip heterogeneo los au
 12. [FFT](https://es.wikipedia.org/wiki/Transformada_r%C3%A1pida_de_Fourier): Fast Fourier Transform.
 13. [BS](https://es.wikipedia.org/wiki/Modelo_de_Black-Scholes): Black Scholes.
 
-### BASELINE PERFORMANCE AND POWER
+
 #### Preguntas
 
 1. ¿A qué se refiere con un paralelismo del X%?
+2. ¿Qué son exactamente los FLOPS
 
 #### Referencias
 
