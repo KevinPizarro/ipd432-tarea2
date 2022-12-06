@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1670333358">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="FSM_timed_button_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="FSM_timed_button_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="FSM_timed_button.vdi"/>
+  <File Type="BG-DRC" Name="FSM_timed_button.drc"/>
+  <File Type="BG-BGN" Name="FSM_timed_button.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="FSM_timed_button.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FSM_timed_button.ltx"/>
+  <File Type="RBD_FILE" Name="FSM_timed_button.rbd"/>
+  <File Type="NPI_FILE" Name="FSM_timed_button.npi"/>
+  <File Type="RNPI_FILE" Name="FSM_timed_button.rnpi"/>
+  <File Type="CFI_FILE" Name="FSM_timed_button.cfi"/>
+  <File Type="RCFI_FILE" Name="FSM_timed_button.rcfi"/>
+  <File Type="PDI-FILE" Name="FSM_timed_button.pdi"/>
+  <File Type="BITSTR-MMI" Name="FSM_timed_button.mmi"/>
+  <File Type="BITSTR-BMM" Name="FSM_timed_button_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="FSM_timed_button.nky"/>
+  <File Type="BITSTR-RBT" Name="FSM_timed_button.rbt"/>
+  <File Type="BITSTR-MSK" Name="FSM_timed_button.msk"/>
+  <File Type="BG-BIN" Name="FSM_timed_button.bin"/>
+  <File Type="BG-BIT" Name="FSM_timed_button.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FSM_timed_button_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FSM_timed_button_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FSM_timed_button_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="FSM_timed_button_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FSM_timed_button_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FSM_timed_button_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FSM_timed_button_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FSM_timed_button_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FSM_timed_button_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FSM_timed_button_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FSM_timed_button_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="FSM_timed_button_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="FSM_timed_button_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FSM_timed_button_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="FSM_timed_button_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FSM_timed_button_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FSM_timed_button_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="FSM_timed_button_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="FSM_timed_button_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="FSM_timed_button_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="FSM_timed_button_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FSM_timed_button_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FSM_timed_button_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FSM_timed_button_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="FSM_timed_button_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="FSM_timed_button_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="FSM_timed_button_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FSM_timed_button_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="FSM_timed_button_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FSM_timed_button_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="FSM_timed_button_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="FSM_timed_button_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="FSM_timed_button_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="FSM_timed_button_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FSM_timed_button_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="FSM_timed_button_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FSM_timed_button_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FSM_timed_button_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="FSM_timed_button_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FSM_timed_button_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="FSM_timed_button_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FSM_timed_button_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="FSM_timed_button_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="FSM_timed_button_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="FSM_timed_button_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="FSM_timed_button_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="FSM_timed_button_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="FSM_timed_button_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FSM_timed_button.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FSM_timed_button_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="FSM_timed_button_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="FSM_timed_button_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="FSM_timed_button_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="FSM_timed_button_reports.tcl"/>
+  <File Type="PA-TCL" Name="FSM_timed_button.tcl"/>
+  <File Type="PA-DCP" Name="FSM_timed_button.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/FSM_timed_button.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FSM_timed_button"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../../Repositorios/Tareas-IPD432/tarea1/Nexys-4-DDR-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/FSM_timed_button.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+</GenRun>

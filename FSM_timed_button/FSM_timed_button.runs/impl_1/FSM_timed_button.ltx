@@ -1,0 +1,134 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "50000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ila_instance",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "1DC2123172CC5C298C0008BEF500990F",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "p_0_in1_in",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "pulse_out_OBUF",
+                                        "isBus": false,
+                                        "parentNetId": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "t",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "t[7]"
+                                            },
+                                            {
+                                                "name": "t[6]"
+                                            },
+                                            {
+                                                "name": "t[5]"
+                                            },
+                                            {
+                                                "name": "t[4]"
+                                            },
+                                            {
+                                                "name": "t[3]"
+                                            },
+                                            {
+                                                "name": "t[2]"
+                                            },
+                                            {
+                                                "name": "t[1]"
+                                            },
+                                            {
+                                                "name": "t[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 1,
+                        "name": "pulse_out_OBUF",
+                        "state_reg": [
+                            {
+                                "name": "FSM_onehot_pr_state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "SB",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "SA",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "SC",
+                                        "val": "100"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
