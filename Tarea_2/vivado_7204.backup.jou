@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec  7 20:33:20 2022
+# Process ID: 7204
+# Current directory: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12152 D:\Archivos\Documentos\Universidad\2022.2\IPD432\Gitlab\Tarea_2\Tarea_2.xpr
+# Log file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/vivado.log
+# Journal file: D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2\vivado.jou
+# Running On: LAPTOP-VMLVOQLM, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16505 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.xpr

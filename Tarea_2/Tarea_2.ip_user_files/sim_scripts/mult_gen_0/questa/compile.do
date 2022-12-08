@@ -16,6 +16,7 @@ vmap mult_gen_v12_0_18 questa_lib/msim/mult_gen_v12_0_18
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 
 vlog -work xpm  -incr -mfcu -sv \
+"C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "C:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm  -93 \
@@ -35,7 +36,6 @@ vcom -work mult_gen_v12_0_18  -93 \
 
 vcom -work xil_defaultlib  -93 \
 "../../../../Tarea_2.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" \
-
 
 vlog -work xil_defaultlib \
 "glbl.v"

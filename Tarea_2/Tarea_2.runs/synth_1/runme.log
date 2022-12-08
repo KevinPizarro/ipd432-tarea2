@@ -1,0 +1,177 @@
+
+*** Running vivado
+    with args -log device.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source device.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source device.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/utils_1/imports/synth_1/device.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/utils_1/imports/synth_1/device.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top device -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3364
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1271.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'device' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_basic' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_basic.v:10]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_rx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'data_sync' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/data_sync.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'data_sync' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_rx.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_rx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen__parameterized0' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen__parameterized0' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_tx.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_tx.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'uart_basic' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/uart_basic.v:10]
+INFO: [Synth 8-6157] synthesizing module 'counter_with_inc' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/counter_with_inc.sv:1]
+	Parameter n bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_with_inc' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/counter_with_inc.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'info_to_7seg' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/info_to_7seg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/double_dabble.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/double_dabble.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bcd2seg' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/BCD.sv:3]
+INFO: [Synth 8-226] default block is never used [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/BCD.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'bcd2seg' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/BCD.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'multiplexing' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/Multiplexing.sv:3]
+	Parameter freq bound to: 120 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'timer' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/timer.sv:1]
+	Parameter n_clycles_count bound to: 104166 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/timer.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_with_inc__parameterized0' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/counter_with_inc.sv:1]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_with_inc__parameterized0' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/counter_with_inc.sv:1]
+INFO: [Synth 8-226] default block is never used [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/Multiplexing.sv:33]
+INFO: [Synth 8-226] default block is never used [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/Multiplexing.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'multiplexing' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/Multiplexing.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'info_to_7seg' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/info_to_7seg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SumVecOperation' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/SumVecOperation.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'SumVecOperation' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/SumVecOperation.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'AvgVecOperation' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/AvgVecOperation.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'AvgVecOperation' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/AvgVecOperation.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ManDisOperation' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/ManDisOperation.sv:1]
+	Parameter N bound to: 1024 - type: integer 
+	Parameter DELAY bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/ManDisOperation.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'ManDisOperation' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/ManDisOperation.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'EucDisOperation' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/EucDisOperation.sv:1]
+	Parameter N bound to: 1024 - type: integer 
+	Parameter DELAY bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/mult_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/mult_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/cordic_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/cordic_0_stub.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/EucDisOperation.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'EucDisOperation' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/EucDisOperation.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:150]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:208]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/.Xil/Vivado-12336-LAPTOP-VMLVOQLM/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'device' (0#1) [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ILA'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:208]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Euc_Dist_inst'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:106]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Man_Dist_inst'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:98]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'screen'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:73]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'BRAM_B'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'BRAM_A'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:45]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'master_count'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:36]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'uart_logic'. This will prevent further optimization [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/sources_1/new/device.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1275.418 ; gain = 4.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1275.418 ; gain = 4.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1275.418 ; gain = 4.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1275.418 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Euc_Dist_inst/Square'
+Finished Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Euc_Dist_inst/Square'
+Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'BRAM_B'
+Finished Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'BRAM_B'
+Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'BRAM_A'
+Finished Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'BRAM_A'
+Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'Euc_Dist_inst/SquareRoot'
+Finished Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'Euc_Dist_inst/SquareRoot'
+Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ILA'
+Finished Parsing XDC File [d:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ILA'
+Parsing XDC File [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/constrs_1/imports/IPD432/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/constrs_1/imports/IPD432/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/constrs_1/imports/IPD432/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/device_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/device_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1348.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1348.137 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BRAM_A' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BRAM_B' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'Euc_Dist_inst/Square' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'Euc_Dist_inst/SquareRoot' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+
+*** Running vivado
+    with args -log device.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source device.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source device.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/utils_1/imports/synth_1/device.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Archivos/Documentos/Universidad/2022.2/IPD432/Gitlab/Tarea_2/Tarea_2.srcs/utils_1/imports/synth_1/device.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top device -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3092

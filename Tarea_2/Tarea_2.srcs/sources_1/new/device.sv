@@ -199,4 +199,18 @@ module device import master_state_enum::*; #(
         endcase  
     end
 /***************************************************************************************/
+logic TX_IN, RX_OUT;
+always_ff @(posedge CLK100MHZ) begin
+    TX_IN <= UART_TXD_IN;
+    RX_OUT <= UART_RXD_OUT;
+end
+
+//ila_0 ILA (
+//	.clk(CLK100MHZ), // input wire clk
+//	.probe0(CLK100MHZ),   // input wire [0:0]  probe0  
+//	.probe1(TX_IN), // input wire [0:0]  probe0  
+//	.probe2(RX_OUT) // input wire [0:0]  probe1
+//);
+
+
 endmodule
